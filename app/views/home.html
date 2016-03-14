@@ -1,0 +1,28 @@
+<div class="home" ng-controller="HomeCtrl" >
+	<div class="row" data-stellar-background-ratio="0.5">
+		<div class="home-map-container medium-7 column"> 
+			<div google-maps class="home-map columns"></div>
+		</div>	
+		<div class="home-product-list-container medium-5 columns">
+			<div class="list-header"></div>
+			<div class="home-product-list" scrollbar>			
+				<div class="list-product" ng-repeat="product in products">
+					<div class="product-image"></div>
+					<div class="product-details">
+						<p class="product-name">Razer blade</p>
+						<p class="product-rating"></p>
+						<p class="product-category">Electronics</p>
+					</div>
+					<div class="product-price">999<span>.99$</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 	<div class="row" data-stellar-background-ratio="0.5">
+		<div class="categories medium-12 columns"></div>
+ 	</div>
+	<div class="row" data-stellar-background-ratio="0.5">
+		<div class="join-us medium-12 columns"></div>
+ 	</div> -->
+
+</div>

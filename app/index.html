@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/customize.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" href="bower_components/foundation/css/foundation.min.css">
+  </head>
+  <body ng-app="gogetApp" ng-controller="MainCtrl">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="background-1" data-stellar-background-ratio="0.7">
+        <div class="header medium-12 columns">
+          <div class="row">
+            <div class="header-top columns">
+              <a href="#/home"> 
+                <div class="header-logo "></div>
+              </a>
+              <div class="header-buttons">
+                <button class="sign-in-button">SIGN IN</button>
+                <button class="sign-in-button">SIGN UP</button>
+                <a  data-dropdown="id01" class="button dropdown sign-in-button">EN</a>
+                <ul id="id01" data-dropdown-content class="f-dropdown">
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="columns">
+              <div class="header-bottom">
+                <div class="navigation">            
+                  <ul class="">
+                    <li class="active"><a href="#/home">Home</a></li>
+                    <li><a ng-href="#/about">Products</a></li>
+                    <li><a ng-href="#/">News Feed</a></li>
+                    <li><a ng-href="#/">Help</a></li>
+                    <li><a ng-href="#/">Contacts</a></li>
+                  </ul>
+                </div>
+                <div class="cart-info">
+                  <p class="money-amount">0.0$</p>
+                  <p class="cart-text">Your cart is empty</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container columns">
+          <div ng-view=""></div>
+        </div>
+    </div>
+    <div class="background-2" data-stellar-background-ratio="0.7">
+      <div class="categories">
+        <p class="categories-title">Categories</p>
+        <p class="categories-subtitle">De lav ya anharmara</p>
+        <div class="row">
+          <div class="columns">
+            <div class="category medium-3 columns"> 
+              <div class="item">
+                <div class="item-circle">
+                  <span></span>
+                </div>
+                <p class="item-title">TOYS</p>
+              </div>
+            </div>
+            <div class="category medium-3 columns"> 
+              <div class="item">
+                <div class="item-circle">
+                  <span></span>
+                </div>
+                <p class="item-title">TOYS</p>
+              </div>
+            </div>
+            <div class="category medium-3 columns"> 
+              <div class="item">
+                <div class="item-circle">
+                  <span></span>
+                </div>
+                <p class="item-title">TOYS</p>
+              </div>
+            </div>
+            <div class="category medium-3 columns"> 
+              <div class="item">
+                <div class="item-circle">
+                  <span></span>
+                </div>
+                <p class="item-title">TOYS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background-3" data-stellar-background-ratio="0.7">
+      <div class="join-us">
+        <p class="join-us-title">JOIN US</p>
+        <p class="join-us-subtitle">vay mi amacheq, ekeq</p>
+        <div class="row">
+          <div class="columns">
+            <div class="statistic medium-3 columns"> 
+              <div class="item">
+                <div class="item-circle">
+                  <span>33.000</span>
+                </div>
+                <p class="item-title">CITIES</p>
+              </div>
+            </div>
+            <div class="statistic medium-3 columns"> 
+              <div class="item">
+                <div class="item-circle">
+                  <span>12.345</span>
+                </div>
+                <p class="item-title">PRODUCTS</p>
+              </div>
+            </div>
+            <div class="statistic medium-3 columns"> 
+              <div class="item">
+                <div class="item-circle">
+                  <span>11.112</span>
+                </div>
+                <p class="item-title">USERS</p>
+              </div>
+            </div>
+            <div class="statistic medium-3 columns"> 
+              <div class="item">
+                <div class="item-circle">
+                  <span>113</span>
+                </div>
+                <p class="item-title">ORDERS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="sign-in-button">SIGN UP NOW</button>
+      </div>
+    </div>
+
+<div class="background-4" data-stellar-background-ratio="0.7">
+      <div class="last-events">
+        <p class="last-events-title">Last Events</p>
+        <p class="last-events-subtitle">subtitle text</p>
+        <div class="row">
+          <div class="swiper-container event-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide event medium-3 columns">
+                  <div class="">
+                    <div class="event-image"></div>
+                    <p class="event-name">Event Name</p>
+                    <p class="event-date">Jan 24, 2016</p>
+                  </div>
+                </div>
+                <div class="swiper-slide event medium-3 columns">
+                  <div class="">
+                    <div class="event-image"></div>
+                    <p class="event-name">Event Name</p>
+                    <p class="event-date">Jan 24, 2016</p>
+                  </div>
+                </div>
+                <div class="swiper-slide event medium-3 columns">
+                  <div class="">
+                    <div class="event-image"></div>
+                    <p class="event-name">Event Name</p>
+                    <p class="event-date">Jan 24, 2016</p>
+                  </div>
+                </div>
+                <div class="swiper-slide event medium-3 columns">
+                  <div class="">
+                    <div class="event-image"></div>
+                    <p class="event-name">Event Name</p>
+                    <p class="event-date">Jan 24, 2016</p>
+                  </div>
+                </div>
+                <div class="swiper-slide event medium-3 columns">
+                  <div class="">
+                    <div class="event-image"></div>
+                    <p class="event-name">Event Name</p>
+                    <p class="event-date">Jan 24, 2016</p>
+                  </div>
+                </div>
+                <div class="swiper-slide event medium-3 columns">
+                  <div class="">
+                    <div class="event-image"></div>
+                    <p class="event-name">Event Name</p>
+                    <p class="event-date">Jan 24, 2016</p>
+                  </div>
+                </div>
+                <div class="swiper-slide event medium-3 columns">
+                  <div class="">
+                    <div class="event-image"></div>
+                    <p class="event-name">Event Name</p>
+                    <p class="event-date">Jan 24, 2016</p>
+                  </div>
+                </div>
+                <div class="swiper-slide event medium-3 columns">
+                  <div class="">
+                    <div class="event-image"></div>
+                    <p class="event-name">Event Name</p>
+                    <p class="event-date">Jan 24, 2016</p>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>    
+          </div>
+        
+      </div>
+    </div>
+</div>
+
+    <div class="footer medium-12">
+      <div class="footer-top columns">
+        <div class="row">
+
+            <div class="footer-categories medium-2 columns">
+              <p class="footer-title">CATEGORIES</p>
+              <div class="footer-content">
+                <p>category name</p>
+                <p>category name</p>
+                <p>category name</p>
+                <p>category name</p>
+                <p>category name</p>
+              </div>
+            </div>
+            <div class="footer-most-popular medium-3 columns">
+              <p class="footer-title">Most Popular</p>
+              <div class="footer-content">
+                <p>24.59$      item name</p>
+                <p>24.59$      item name</p>
+                <p>24.59$      item name</p>
+                <p>24.59$      item name</p>
+                <p>24.59$      item name</p>
+              </div>
+            </div>
+            <div class="footer-about-us medium-3 columns">
+              <p class="footer-title">ABOUT US</p>
+              <div class="footer-content">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+              </div>
+            </div>
+              <div class="footer-contacts medium-3 columns">
+              <div class="footer-title">
+                
+                <div class="medium-3">
+                  <span class="facebook-icon"></span>
+                </div>
+                <div class="medium-3">
+                  <span class="twitter-icon"></span>
+                </div>
+                <div class="medium-3">
+                  <span class="google-plus-icon"></span>
+                </div>
+                <div class="medium-3">
+                  <span class="instagram-icon"></span>
+                </div>
+              </div>
+             
+              <div class="footer-content">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="footer-bottom columns">
+        <div class="row">
+          <div class="columns">
+              <a href="#/home"> 
+                <div class="footer-logo "></div>
+              </a>
+              <div class="navigation">            
+                <ul class="">
+                  <li class="active"><a href="#/home">Home</a></li>
+                  <li><a ng-href="#/about">Products</a></li>
+                  <li><a ng-href="#/">News Feed</a></li>
+                  <li><a ng-href="#/">Help</a></li>
+                  <li><a ng-href="#/">Contacts</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script src="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+    <script src="bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+    <script src="bower_components/foundation/js/foundation.js"></script>
+    <script src="bower_components/jquery.stellar/jquery.stellar.js"></script>
+    <script src="bower_components/swiper/dist/js/swiper.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/home.js"></script>
+        
+        <!-- endbuild -->
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script src="scripts/directives/google-maps.js"></script>
+        <script src="scripts/directives/scrollbar.js"></script>
+        <script src="scripts/directives/stellar.js"></script>
+</body>
+</html>
